@@ -18,4 +18,11 @@ public class CalculatorTest {
         Assert.assertEquals(expectResult, actualResult);
     }
 
+    @Test
+    public void shouldReturn0When2Mul2() throws IllegalAccessException, ClassNotFoundException, InstantiationException {
+        Calculator calculator = new Calculator();
+        int actualResult = calculator.compute(2,2,"Mul");
+        int expectResult = 4;
+        Assert.assertEquals(expectResult, actualResult);
+    }
 }
